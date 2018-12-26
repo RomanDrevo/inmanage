@@ -10,14 +10,6 @@ export default class MoviesStore{
     @observable selectedMovie = null
 
 
-    // @action
-    // setSelectedMovie = movie =>{
-    //     axios.get(`http://x-mode.co.il/exam/descriptionMovies/${movie.id}.txt`)
-    //         .then(res => console.log(res))
-    //
-    //     this.selectedMovie = movie
-    // }
-
     @action
     async setSelectedMovie (movie){
         const myMovie = movie

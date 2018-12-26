@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Col, Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import {Link, withRouter} from "react-router-dom";
 import {inject, observer} from "mobx-react/index";
 import './MovieDetails.css'

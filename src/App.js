@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Redirect, Route, Switch, withRouter} from "react-router-dom";
+import {Route, Switch, withRouter} from "react-router-dom";
 import './App.css';
 import {inject, observer} from "mobx-react";
 import {Col, Grid, Row} from "react-bootstrap";

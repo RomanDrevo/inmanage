@@ -26,12 +26,4 @@ class MovieRow extends Component{
     }
 }
 
-// const MovieRow = ({movie}) => (
-//     <tr className="pointer">
-//         <td>{movie.name}</td>
-//         <td>{movie.category}</td>
-//         <td>{movie.year}</td>
-//     </tr>
-// )
-
 export default MovieRow

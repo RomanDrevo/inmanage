@@ -7,16 +7,19 @@ export default class MoviesStore{
     @observable isLoading = false
     @observable movies = []
     @observable search = ''
+    @observable selectedMovie = null
 
 
+    @action
+    setSelectedMovie = movie =>{
+        this.selectedMovie = movie
+    }
 
     @action
     async getMovies(){
         this.isLoading = true
         try {
             const movies = await axios.get('http://x-mode.co.il/exam/allMovies/allMovies.txt')
-            console.log(movies)
-
             runInAction(()=> this.movies = movies.data.movies.map(json => Movie.reconstituteFrom(json)))
         }
         catch (e) {
@@ -24,16 +27,13 @@ export default class MoviesStore{
         }
         finally {
             this.isLoading = false
-            console.log('Movies: ', this.movies)
         }
     }
 
     @computed get filteredMovies() {
         return this.movies.filter(
             movie => {
-                return movie.name.toLowerCase().indexOf(this.search.toLowerCase()) !== -1 ||
-                    movie.category.toLowerCase().indexOf(this.search.toLowerCase()) !== -1
-            })
+                return movie.name.toLowerCase().indexOf(this.search.toLowerCase()) !== -1 })
 
     }
 

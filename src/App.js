@@ -7,6 +7,8 @@ import MoviesList from "./components/movies-list/MoviesList";
 import MovieDetails from "./components/movie-details/MovieDetails";
 import loader from './assets/images/loading.svg'
 
+
+@withRouter
 @inject('moviesStore')
 @observer
 class App extends Component {

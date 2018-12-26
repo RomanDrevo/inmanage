@@ -1,27 +1,11 @@
 import React, {Component} from 'react';
 import {Table} from "react-bootstrap";
 import {inject, observer} from "mobx-react";
-
-class MovieRow extends Component{
-
-    componentDidMount(){
-        console.log('row props: ', this.props)
-    }
-
-    render(){
-        const {movie} = this.props
-        return(
-            <tr>
-                <td>{movie.name}</td>
-                <td>{movie.category}</td>
-                <td>{movie.year}</td>
-            </tr>
-        )
-    }
-}
+import MovieRow from "./MovieRow";
+import {withRouter} from "react-router-dom";
 
 
-
+@withRouter
 @inject('moviesStore')
 @observer
 class MoviesList extends Component {

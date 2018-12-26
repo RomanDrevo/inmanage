@@ -3,7 +3,7 @@ import {Table} from "react-bootstrap";
 import {inject, observer} from "mobx-react";
 import MovieRow from "./MovieRow";
 import {withRouter} from "react-router-dom";
-
+import './MoviesList.css'
 
 @withRouter
 @inject('moviesStore')
@@ -15,10 +15,12 @@ class MoviesList extends Component {
 
         return (
             <div>
-                <h1> Movies List</h1>
+                <div className="flex justify-between items-baseline">
+                    <h1> Movies List</h1>
 
-                <input placeholder="Search" className="search-bar" value={moviesStore.search} onChange={moviesStore.updateSearch}/>
-
+                    <input placeholder="Search" className="search-bar mb-2" value={moviesStore.search}
+                           onChange={moviesStore.updateSearch}/>
+                </div>
                 <Table responsive>
                     <thead>
                     <tr>
@@ -29,7 +31,7 @@ class MoviesList extends Component {
                     </thead>
                     <tbody>
                     {
-                        moviesStore.sortedMovies.map(movie => <MovieRow key={movie.id} movie={movie} />)
+                        moviesStore.sortedMovies.map(movie => <MovieRow key={movie.id} movie={movie}/>)
                     }
                     </tbody>
                 </Table>

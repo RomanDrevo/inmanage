@@ -17,7 +17,7 @@ class MovieRow extends Component{
     render(){
         const {movie} = this.props
         return(
-            <tr onClick={()=> this.handleOnClick(movie)} className="pointer">
+            <tr onClick={()=> this.handleOnClick(movie)} className="movie-row pointer">
                 <td>{movie.name}</td>
                 <td>{movie.category}</td>
                 <td>{movie.year}</td>

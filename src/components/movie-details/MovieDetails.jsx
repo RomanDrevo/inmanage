@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Col, Row} from "react-bootstrap";
-import {withRouter} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 import {inject, observer} from "mobx-react/index";
 import './MovieDetails.css'
 
@@ -19,15 +19,15 @@ class MovieDetails extends Component {
         return (
             <div>
                 <h1>Movie Details</h1>
-                <Button onClick={()=> history.push('/')} bsStyle="primary">Back to movies list</Button>
+                <Link to="/" >Back to movies list</Link>
 
                 <Row className="mt-5 jumbotron">
                     <Col sm={5}>
-                        <img src={selectedMovie.imageUrl} />
+                        <img alt={selectedMovie.name} src={selectedMovie.imageUrl} />
                     </Col>
                     <Col sm={7}>
                         <div className="movie-description flex flex-column">
-                            <h3>{selectedMovie.name}</h3>
+                            <h1>{selectedMovie.name}</h1>
                             <div className="flex movie-details">
                                 <span className="mr-2">Hour: <b>{selectedMovie.hour}</b></span>
                                 <span className="mr-2">Category: <b>{selectedMovie.category}</b></span>
@@ -36,7 +36,7 @@ class MovieDetails extends Component {
                             <p className='border-top'>
                                 {selectedMovie.description}
                             </p>
-                            <h3><a target='_blank' href={selectedMovie.promoUrl}>Watch trailer</a></h3>
+                            <h3><a className="trailer" target='_blank' href={selectedMovie.promoUrl}>Watch trailer</a></h3>
                         </div>
                     </Col>
                 </Row>

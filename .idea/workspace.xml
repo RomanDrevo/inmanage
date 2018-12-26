@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2c1def9-46a2-4de1-b55f-1040e7e165dc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/movies-list/MoviesList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-details/MovieDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/MoviesStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/MoviesStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movies-list/MovieRow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movies-list/MovieRow.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,17 +24,17 @@
       <file leaf-file-name="MoviesStore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stores/MoviesStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoviesList.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MoviesList.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="211">
+              <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -43,11 +45,20 @@
       <file leaf-file-name="MovieRow.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/movies-list/MovieRow.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="77" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoviesList.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/movies-list/MoviesList.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -67,8 +78,8 @@
       <file leaf-file-name="MovieDetails.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/movie-details/MovieDetails.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="57" />
+            <state relative-caret-position="-51">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -76,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieDetails.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MovieDetails.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/movie-details/MovieDetails.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="121">
+              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -91,6 +102,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -107,12 +119,13 @@
         <option value="$PROJECT_DIR$/src/models/Movie.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/movies-list/MovieRow.js" />
-        <option value="$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/movies-list/MovieRow.jsx" />
         <option value="$PROJECT_DIR$/src/stores/MoviesStore.js" />
         <option value="$PROJECT_DIR$/src/components/movie-details/MovieDetails.jsx" />
         <option value="$PROJECT_DIR$/src/components/movie-details/MovieDetails.css" />
+        <option value="$PROJECT_DIR$/src/components/movies-list/MovieRow.jsx" />
+        <option value="$PROJECT_DIR$/src/components/movies-list/MoviesList.css" />
+        <option value="$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx" />
       </list>
     </option>
   </component>
@@ -209,7 +222,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-locations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../isracard" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -254,26 +267,25 @@
       <option name="presentableId" value="Default" />
       <updated>1545814135075</updated>
       <workItem from="1545814136576" duration="6708000" />
-      <workItem from="1545821231056" duration="1867000" />
+      <workItem from="1545821231056" duration="4494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8575000" />
+    <option name="totallyTimeSpent" value="11202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3294893" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3294893" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3294893" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3294893" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -399,37 +411,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/movies-list/MovieRow.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stores/MoviesStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/movie-details/MovieDetails.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="57" />
+        <state relative-caret-position="-51">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -438,8 +430,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/movie-details/MovieDetails.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="121">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/movies-list/MoviesList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/movies-list/MovieRow.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

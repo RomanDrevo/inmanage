@@ -1,0 +1,12 @@
+input{
+    padding: 1px 11px;
+    max-height: 32px;
+}
+
+.movie-row{
+    color: #000;
+}
+
+.movie-row:hover{
+    opacity: .6;
+}

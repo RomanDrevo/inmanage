@@ -45,7 +45,7 @@ class MoviesList extends Component {
                     </thead>
                     <tbody>
                     {
-                        moviesStore.filteredMovies.map(movie => <MovieRow key={movie.id} movie={movie} />)
+                        moviesStore.sortedMovies.map(movie => <MovieRow key={movie.id} movie={movie} />)
                     }
                     </tbody>
                 </Table>

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2c1def9-46a2-4de1-b55f-1040e7e165dc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Movie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/MoviesStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/MoviesStore.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="MoviesStore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stores/MoviesStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="189">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="30" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -33,8 +32,8 @@
       <file leaf-file-name="MoviesList.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state relative-caret-position="289">
+              <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -219,12 +218,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545814135075</updated>
-      <workItem from="1545814136576" duration="3698000" />
+      <workItem from="1545814136576" duration="3981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3698000" />
+    <option name="totallyTimeSpent" value="3981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -347,8 +346,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stores/MoviesStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="189">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
@@ -357,8 +356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/movies-list/MoviesList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="289">
+          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

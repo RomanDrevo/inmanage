@@ -34,6 +34,13 @@ export default class MoviesStore{
                 return movie.name.toLowerCase().indexOf(this.search.toLowerCase()) !== -1 ||
                     movie.category.toLowerCase().indexOf(this.search.toLowerCase()) !== -1
             })
+
+    }
+
+    @computed get sortedMovies (){
+        return this.filteredMovies.sort((a, b)=> {
+            return new Date(b.year) - new Date(a.year);
+        })
     }
 
     @action

@@ -1,12 +1,23 @@
 import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
+import {inject, observer} from "mobx-react";
 
 @withRouter
+@inject('moviesStore')
+@observer
 class MovieRow extends Component{
+
+    handleOnClick = movie =>{
+        const {history, moviesStore} = this.props
+
+        moviesStore.setSelectedMovie(movie)
+        history.push(`/${movie.id}`)
+    }
+
     render(){
-        const {movie, history} = this.props
+        const {movie} = this.props
         return(
-            <tr onClick={()=> history.push(`/${movie.id}`)} className="pointer">
+            <tr onClick={()=> this.handleOnClick(movie)} className="pointer">
                 <td>{movie.name}</td>
                 <td>{movie.category}</td>
                 <td>{movie.year}</td>

@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
 import {Button} from "react-bootstrap";
 import {withRouter} from "react-router-dom";
+import {inject, observer} from "mobx-react/index";
 
 @withRouter
+@inject('moviesStore')
+@observer
 class MovieDetails extends Component {
 
     render() {
-        const {history} = this.props
+        const {history, moviesStore} = this.props
+        const {selectedMovie} = moviesStore
+
+        console.log(selectedMovie)
 
         return (
             <div>

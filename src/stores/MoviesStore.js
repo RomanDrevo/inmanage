@@ -10,10 +10,40 @@ export default class MoviesStore{
     @observable selectedMovie = null
 
 
+    // @action
+    // setSelectedMovie = movie =>{
+    //     axios.get(`http://x-mode.co.il/exam/descriptionMovies/${movie.id}.txt`)
+    //         .then(res => console.log(res))
+    //
+    //     this.selectedMovie = movie
+    // }
+
     @action
-    setSelectedMovie = movie =>{
-        this.selectedMovie = movie
+    async setSelectedMovie (movie){
+        const myMovie = movie
+        this.isLoading = true
+        try {
+            const movie = await axios.get(`http://x-mode.co.il/exam/descriptionMovies/${myMovie.id}.txt`)
+            runInAction(()=> this.selectedMovie = movie.data)
+        }
+        catch (e) {
+            console.log(e)
+        }
+        finally {
+            this.isLoading = false
+            console.log('this selected mov: ', this.selectedMovie)
+        }
     }
+
+    // @action
+    // async getMoviesImg (){
+    //     try {
+    //         this.movies.map(m)
+    //     }
+    //     catch (e) {
+    //
+    //     }
+    // }
 
     @action
     async getMovies(){

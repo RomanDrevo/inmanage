@@ -1,18 +1,14 @@
-import {observable, action, runInAction} from "mobx";
+import {observable, action, runInAction, computed} from "mobx";
 import axios from 'axios'
 import Movie from "../models/Movie";
 
 export default class MoviesStore{
 
     @observable isLoading = false
-
     @observable movies = []
+    @observable search = ''
 
-    // @action
-    // getPosts = () =>{
-    //     // console.log('here')
-    //     axios.get('db.json').then((res)=> console.log({res}))
-    // }
+
 
     @action
     async getMovies(){
@@ -30,6 +26,19 @@ export default class MoviesStore{
             this.isLoading = false
             console.log('Movies: ', this.movies)
         }
+    }
+
+    @computed get filteredMovies() {
+        return this.movies.filter(
+            movie => {
+                return movie.name.toLowerCase().indexOf(this.search.toLowerCase()) !== -1 ||
+                    movie.category.toLowerCase().indexOf(this.search.toLowerCase()) !== -1
+            })
+    }
+
+    @action
+    updateSearch = (e) => {
+        this.search = e.target.value
     }
 
 }

@@ -31,19 +31,9 @@ export default class MoviesStore{
         }
         finally {
             this.isLoading = false
-            console.log('this selected mov: ', this.selectedMovie)
+            // console.log('this selected mov: ', this.selectedMovie)
         }
     }
-
-    // @action
-    // async getMoviesImg (){
-    //     try {
-    //         this.movies.map(m)
-    //     }
-    //     catch (e) {
-    //
-    //     }
-    // }
 
     @action
     async getMovies(){
